@@ -25,5 +25,5 @@ Model Pick 3 Lottery Domain
 3. Plays - Comprise of 2 gen. + 1 selected digit placed by player associated with a user and game pick.
 ----------------------------------
 Stemming from the requirements, we need the following:
-	1. To generate 3 unique, but randomly selected digits between a predefinded range, say 0 - 9.
-	2. We also need to generate unique numbers for player and determine how many digits match.
+	1. To generate n unique, but randomly selected digits between a predefinded range, say 0 - 9.✅
+	2. We need verify a player's Play (current gamble) against the corresponding Pick (The current valid winning digits).

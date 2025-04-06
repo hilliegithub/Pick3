@@ -2,8 +2,6 @@ package hylton.pick3.game.rng;
 
 import org.springframework.stereotype.Service;
 
-import lombok.val;
-
 import java.util.Random;
 import java.util.Set;
 import java.util.HashSet;
@@ -47,7 +45,7 @@ public class RngServiceImpl implements RngService {
     }
 
     @Override
-    public Set randomDigits(int numOfDigits) {
+    public Set<Integer> randomDigits(int numOfDigits) {
         numOfDigits = validNumberOfDigitsRequest(numOfDigits);
 
         Set<Integer> digits = new HashSet<Integer>();
