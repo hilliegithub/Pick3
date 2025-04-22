@@ -2,6 +2,7 @@ package hylton.pick3.game.pick;
 
 import lombok.*;
 import java.time.LocalDateTime;
+import java.util.Set;
 
 /**
  * This class represents a Pick - A unique selection of 3 digits.
@@ -12,8 +13,6 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 public class Pick {
     private int pickNumber;
-    private int slotA;
-    private int slotB;
-    private int slotC;
-    private LocalDateTime endAt;
+    private Set<Integer> digits;
+    private LocalDateTime TimeEndAt;
 }

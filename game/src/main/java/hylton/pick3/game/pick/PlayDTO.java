@@ -9,7 +9,7 @@ import lombok.Value;
  */
 @Value
 public class PlayDTO {
-    private String playerAlias;
-    private int digit;
-    private int pickId;
+    String playerAlias;
+    int digit;
+    int pickId;
 }

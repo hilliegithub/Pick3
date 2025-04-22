@@ -14,7 +14,7 @@ public class RngServiceImpl implements RngService {
 
     private final Random random;
 
-    RngServiceImpl() {
+    public RngServiceImpl() {
         this.random = new Random();
     }
 
@@ -37,6 +37,8 @@ public class RngServiceImpl implements RngService {
     private Set<Integer> fillSetWithRandomNumbers(Set<Integer> digits, int amount) {
         for (int i = 0; i < amount; i++) {
             boolean didAddUnique = true;
+            // Dangerous loop that theoretically could loop forever - But trivial
+            // possibility now
             do {
                 didAddUnique = digits.add(next());
             } while (!didAddUnique);
